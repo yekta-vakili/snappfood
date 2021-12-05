@@ -1,0 +1,423 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 20px 40px;
+}
+.mine1 {
+  background-image: url("Images/hero-image.png");
+  background-repeat: no-repeat;
+  background-position: -100px 200px;
+}
+.header1 {
+  direction: ltr;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+}
+.logo1 {
+  max-width: 150px;
+}
+.login {
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.log {
+  background-color: #ff01a6;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+}
+.add {
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+.header2 .order {
+  font-size: 46px;
+  width: max-content;
+  display: inline-block;
+}
+.foods {
+  display: inline-block;
+}
+.header2 p {
+  font-size: 18px;
+  color: #666666;
+}
+
+.header2 {
+  display: block;
+  text-align: right;
+  direction: rtl;
+  margin-right: 100px;
+}
+.vaiable {
+  display: block;
+  width: 100px;
+  height: 10px;
+  font-size: 46px;
+  position: relative;
+  color: #ff01a6;
+}
+.food1 {
+  animation: move1 6s infinite;
+  animation-delay: 2s;
+  opacity: 0;
+  transform: translateY(40px);
+}
+.food2 {
+  animation: move2 6s infinite;
+  animation-delay: 3s;
+  opacity: 0;
+  transform: translateY(30px);
+}
+.food3 {
+  animation: move3 6s infinite;
+  animation-delay: 4s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+@keyframes move1 {
+  0% {
+    top: 0px;
+    color: #ff01a6;
+    opacity: 1;
+  }
+  20% {
+    top: 10px;
+    color: white;
+  }
+  100% {
+    top: 50px;
+    color: white;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    top: 0px;
+    color: #ff01a6;
+    opacity: 1;
+  }
+  20% {
+    top: 10px;
+    color: white;
+  }
+  100% {
+    top: 50px;
+    color: white;
+  }
+}
+
+@keyframes move3 {
+  0% {
+    top: 0px;
+    color: #ff01a6;
+    opacity: 1;
+  }
+  20% {
+    top: 10px;
+    color: white;
+  }
+  100% {
+    top: 50px;
+    color: white;
+  }
+}
+
+.searchaddress input[type="search"] {
+  border: 1px solid #666666;
+  border-radius: 30px;
+  width: 30%;
+  height: 3rem;
+  padding: 10px;
+}
+.header3 {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4e7de;
+  opacity: 0.9;
+  filter: alpha(opacity=50);
+  padding: 20px 10px;
+  overflow-x: auto;
+  border-radius: 30px;
+}
+
+.header3 a img {
+  width: 40%;
+  text-align: center;
+  transform: scale(1);
+  transition: 1s ease-in-out all;
+}
+
+.header3 a {
+  text-align: center;
+  text-decoration: none;
+  color: #666666;
+  min-width: 70px;
+}
+.menufood {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.mainitem {
+  border-radius: 20px;
+  width: 14.66%;
+  display: inline-block;
+}
+
+.item {
+  height: 20vh;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 28px;
+  height: 15vh;
+}
+.rec {
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    bottom: 49px;
+    display: flex;
+    width: 40%;
+    padding: 4px 0px;
+    background-color: white;
+    border-bottom-right-radius: 7px;
+    border-top-left-radius: 17px;
+}
+.felesh {
+  font-size: 17px;
+  color: #ff01a6;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.rec:hover .felesh {
+  margin-right: 15px;
+}
+
+.aboutapp {
+  margin-top: 200px;
+  height: 60vh;
+  background-color: #eaedf0;
+  border-bottom-right-radius: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.about {
+  width: 60%;
+  margin: 20px 150px;
+}
+
+.about h1 {
+  font-size: 36px;
+}
+
+.about div {
+  font-size: 20px;
+  color: #666666;
+}
+
+.minipara {
+  margin-top: 50px;
+}
+
+.phonenumber {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+  width: 55%;
+  padding: 0px;
+}
+
+.phonenumber input {
+  height: 5vh;
+  margin: 5px;
+  border: 2px solid transparent;
+}
+
+.imgphone {
+  width: 40%;
+  position: relative;
+}
+
+.imgphone img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 18%;
+}
+.link {
+  background-color: #ff01a6;
+  border: 2px solid #ff01a6;
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+}
+.group{
+    margin-top: 3rem;
+    margin-right: 1rem;
+    color: #53565b;
+}
+.work {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9fafb;
+    border-radius: 50px;
+    margin: 170px 10px;
+}
+
+.business {
+    display: flex;
+    align-items: center;
+}
+
+.business h1 {
+    font-size: 36px;
+}
+
+.business p {
+    font-size: 24px;
+    color: #666666;
+}
+.imgwork{
+    margin-top: -6rem;
+}
+.log2{
+    background-color: #ff01a6;
+    border: 2px solid #ff01a6;
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+hr{
+    border: 1px solid #eaedf0;
+    margin-top: -5rem;
+}
+.cities {
+    direction: rtl;
+}
+
+.cities1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+}
+
+.city {
+    width: 8.33%;
+    padding: 5px 0px;
+}
+
+.city a {
+    text-decoration: none;
+    color: #666666;
+
+}
+.footer {
+    display: flex;
+    background-color: #f9fafb;
+    margin-top: 80px;
+    direction: rtl;
+}
+
+.pln1 {
+    width: 30%;
+}
+.pln11 {
+    display: flex;
+}
+
+.pln11 img {
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+.icons {
+    margin: 50px 0px;
+}
+
+.icons button {
+    border-radius: 50%;
+    padding: 8px;
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 5px 10px 18px white;
+    margin: 10px 3px;
+}
+
+.icons i {
+    color: #666666;
+}
+.pln2 {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pln2 li {
+    list-style: none;
+    margin: 20px;
+}
+
+.pln2 li a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 16px;
+}
+
+.pln3 {
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pln3 li {
+    list-style: none;
+    margin: 20px;
+}
+
+.pln3 li a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 16px;
+}
+
+.pln4 {
+    width: 22%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
